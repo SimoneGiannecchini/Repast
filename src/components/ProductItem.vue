@@ -1,11 +1,18 @@
 <template>
-  <div v-if="product" class="product-card" @click="$emit('select', product)">
-    <img :src="product.immagine" :alt="product.nome" />
-    <div class="product-info">
-      <h2>{{ product.nome }}</h2>
-      <p v-if="typeof product.prezzo==='number'">€ {{ product.prezzo.toFixed(2) }}</p>
-    </div>
-  </div>
+  <b-card
+    v-if="product"
+    :title="product.nome"
+    :img-src="product.immagine || 'https://via.placeholder.com/400x300?text=Immagine+non+disponibile'"
+    :img-alt="product.nome"
+    img-top
+    class="h-100 shadow-sm"
+    @click="$emit('select', product)"
+    style="cursor: pointer"
+  >
+    <p v-if="typeof product.prezzo === 'number'" class="mb-0 fw-bold text-success">
+      € {{ product.prezzo.toFixed(2) }}
+    </p>
+  </b-card>
 </template>
 
 <script>
@@ -17,5 +24,6 @@ export default {
       default: () => ({})
     }
   }
-};
+}
 </script>
+

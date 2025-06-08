@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import ProductList   from './components/ProductList.vue'
 import ProductDetail from './components/ProductDetail.vue'
 import Cart          from './components/Cart.vue'
@@ -10,6 +10,6 @@ const routes = [
 ]
 
 export default createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })

@@ -41,3 +41,12 @@ npm install
 
 # Avvia l'app in modalità sviluppo
 npm run dev
+```
+---
+## 📜 Licenza MIT
+
+Questo progetto è liberamente utilizzabile secondo i termini della licenza [MIT](https://opensource.org/licenses/MIT).
+
+## 🙋‍♂️ Autore
+
+Progetto sviluppato da [**Simone Giannecchini**](https://simonegiannecchini.github.io/Simone.github.io/), Full Stack Developer, esperto in React e appassionato di tecnologie web moderne e Intelligenza Artificiale.

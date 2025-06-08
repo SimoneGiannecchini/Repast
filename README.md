@@ -1,5 +1,43 @@
-# Vue 3 + Vite
+# 🥗 ReFresh Food – E-commerce Mobile-First
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**ReFresh Food** è una web app mobile-first progettata per offrire un'esperienza d'acquisto rapida e intuitiva direttamente da smartphone. L’obiettivo è testare un nuovo modello di business basato su un e-commerce minimal, smart e user-friendly.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 📱 Funzionalità principali
+
+- ✅ **Lista dei prodotti**: vetrina dei prodotti disponibili, con immagine, nome e prezzo.
+- ✅ **Pagina prodotto**: dettaglio completo del prodotto selezionato, con descrizione.
+- ✅ **Carrello intelligente**: gestione dei prodotti selezionati con calcolo automatico dello sconto del 10% su più di 3 articoli.
+
+---
+
+## 🔧 Tecnologie utilizzate
+
+- [Vue.js 3](https://vuejs.org/) – Framework JavaScript progressivo.
+- [Vue Router](https://router.vuejs.org/) – Per la navigazione tra le schermate.
+- [Bootstrap Vue](https://bootstrap-vue.org/) – UI responsive e ottimizzata per mobile.
+- Axios – Per consumare l’API dei prodotti.
+
+---
+
+## 🛒 Logica dello sconto
+
+> Se nel carrello ci sono **più di 3 prodotti**, il sistema applica **automaticamente uno sconto del 10%** sul totale.
+
+---
+
+## 🚀 Installazione
+
+Segui questi passaggi per clonare ed eseguire il progetto in locale:
+
+```bash
+# Clona il repository
+git clone https://github.com/tuo-username/refresh-food.git
+
+# Accedi alla cartella del progetto
+cd refresh-food
+
+# Installa le dipendenze
+npm install
+
+# Avvia l'app in modalità sviluppo
+npm run dev
